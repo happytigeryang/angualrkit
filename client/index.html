@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularjsKit Home</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/animate.css">
+</head>
+
+
+<body data-ng-controller="IndexController as IC">
+    <div class="container">
+        <header data-ui-view="header"></header>
+        <nav data-ui-view="menu" role="navigation"></nav>
+        <section data-ui-view="breadcrumbs"></section>
+        <section data-ui-view="content"></section>
+        <footer data-ui-view="footer"></footer>
+    </div>
+
+    <!-- Bower scripts: -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Application scripts: -->
+    <script src="modules/app.js"></script>
+    <script src="modules/app.routes.js"></script>
+    <script src="modules/home/indexController.js"></script>
+    <script src="modules/form/formController.js"></script>
+    <script src="modules/json/jsonController.js"></script>
+    <script src="modules/json/jsonService.js"></script>
+    <script src="modules/mountains/detailsController.js"></script>
+    <script src="modules/mountains/listController.js"></script>
+    <script src="modules/mountains/mountainsService.js"></script>
+    <script src="modules/navigation/breadcrumbsController.js"></script>
+    <script src="modules/navigation/footerController.js"></script>
+    <script src="modules/navigation/headerController.js"></script>
+    <script src="modules/navigation/menuController.js"></script>
+    <script src="modules/todos/categoriesService.js"></script>
+    <script src="modules/todos/newController.js"></script>
+    <script src="modules/todos/todosService.js"></script>
+    <script src="modules/todos/listController.js"></script>
+    <script src="common/directives/aboutDirective.js"></script>
+    <script src="common/directives/datepickerDirective.js"></script>
+    <script src="common/constants/constants.js"></script>
+    <script src="common/filters/filters.js"></script>
+</body>
+
+</html>
