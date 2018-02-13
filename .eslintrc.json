@@ -1,0 +1,27 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "amd": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 5,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "globalReturn": true,
+            "impliedStrict": true,
+            "jsx": true,
+            "experimentalObjectRestSpread": false
+        }
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "$": true,
+        "jQuery": true,
+        "angular": true,
+        "ga": true,
+        "describe":true,
+        "NEG": true
+    }
+}
